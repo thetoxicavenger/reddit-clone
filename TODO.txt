@@ -1,0 +1,14 @@
+- Order of posts is by votes
+- votes can't go lower than 0
+- show/hide comments
+- show datetime on each post human readable
+
+Features:
+- add a loader on click to submit post
+
+
+BONUS:
+- make cards animate in and out on filter - maybe transitions from material ui
+
+Bugs:
+- Save button will wait to become valid until you've tabbed out of whichever tab you're fixing
