@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Comment() {
+export default function Comment({ content }) {
   return (
-    <div>
-      Comment
-    </div>
+    <li>
+      {content}
+    </li>
   )
 }

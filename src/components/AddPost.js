@@ -1,22 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Modal from '@material-ui/core/Modal';
-import Button from '@material-ui/core/Button';
 import { addPost } from '../store'
-
 import NewPost from './NewPost'
-
-function rand() {
-  return Math.round(Math.random() * 20) - 10;
-}
 
 function getModalStyle() {
   const top = 15;
   const left = 20;
-
   return {
     top: `${top}%`,
     left: `${left}%`,

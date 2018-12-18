@@ -25,8 +25,12 @@ function Post({ author, content, title, createdAt, votes, img_url, inCart, id, c
           <Paper className={classes.paper}>
             <img src={img_url} alt={title} style={{ maxWidth: '100%', display: 'block' }} />
             <Typography variant="h6" color="primary" noWrap>{title}</Typography>
+            <Typography variant="caption" color="textPrimary">{author}</Typography>
             <Typography color="primary">Votes TODO</Typography>
-            <Comments postId={id} />
+            <Comments 
+              post_id={id} 
+              createdAt={createdAt}
+            />
           </Paper>
         </Grid>
       </Grid>
